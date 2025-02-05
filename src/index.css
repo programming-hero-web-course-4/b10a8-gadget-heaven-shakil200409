@@ -8,3 +8,6 @@
 .footer-title {
   @apply text-lg font-bold opacity-100 text-center normal-case;
 }
+.nav-icon {
+  @apply border border-gray-300 bg-white rounded-full p-2;
+}

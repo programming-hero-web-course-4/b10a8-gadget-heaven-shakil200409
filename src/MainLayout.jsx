@@ -8,7 +8,7 @@ const MainLayout = () => {
       {/* Navbar */}
       <Navbar></Navbar>
       {/* Dynamic section */}
-      <section>
+      <section className="bg-base-300 h-10">
         <Outlet />
       </section>
       {/* Footer */}
