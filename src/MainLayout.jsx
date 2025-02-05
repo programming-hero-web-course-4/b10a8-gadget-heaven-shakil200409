@@ -1,8 +1,19 @@
+import { Outlet } from "react-router-dom";
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
+
 const MainLayout = () => {
   return (
-    <div>
-      <h2>Hello World</h2>
-    </div>
+    <>
+      {/* Navbar */}
+      <Navbar></Navbar>
+      {/* Dynamic section */}
+      <section>
+        <Outlet />
+      </section>
+      {/* Footer */}
+      <Footer></Footer>
+    </>
   );
 };
 
