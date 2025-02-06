@@ -1,49 +1,84 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { IoCartOutline, IoHeartOutline } from "react-icons/io5";
 
 const Navbar = () => {
+  const { pathname } = useLocation();
   const links = (
     <>
-      <NavLink
-        className={({ isActive }) =>
-          `${isActive ? "text-purple-500" : "text-gray-600"}font-medium `
-        }
-        to={"/"}
-      >
-        Home
-      </NavLink>
-      <NavLink
-        className={({ isActive }) =>
-          `${isActive ? "text-purple-500" : "text-gray-600"}font-medium `
-        }
-        to={"/blogs"}
-      >
-        Blogs
-      </NavLink>
-      <NavLink
-        className={({ isActive }) =>
-          `${isActive ? "text-purple-500" : "text-gray-600"}font-medium `
-        }
-        to={"/stats"}
-      >
-        Statistics
-      </NavLink>
-      <NavLink
-        className={({ isActive }) =>
-          `${isActive ? "text-purple-500" : "text-gray-600"}font-medium `
-        }
-        to={"/dashboard"}
-      >
-        Dashboard
-      </NavLink>
+      <li>
+        <NavLink
+          className={({ isActive }) =>
+            `${isActive ? "text-white" : "text-gray-600"} font-medium `
+          }
+          to={"/"}
+        >
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          className={({ isActive }) =>
+            `${
+              isActive
+                ? "text-purple-500"
+                : pathname === "/"
+                ? "text-white/70"
+                : "text-gray-600"
+            } font-medium`
+          }
+          to={"/blogs"}
+        >
+          Blogs
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          className={({ isActive }) =>
+            `${
+              isActive
+                ? "text-purple-500"
+                : pathname === "/"
+                ? "text-white/70"
+                : "text-gray-600"
+            } font-medium `
+          }
+          to={"/stats"}
+        >
+          Statistics
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          className={({ isActive }) =>
+            `${
+              isActive
+                ? "text-purple-500"
+                : pathname === "/"
+                ? "text-white/70"
+                : "text-gray-600"
+            } font-medium `
+          }
+          to={"/dashboard"}
+        >
+          Dashboard
+        </NavLink>
+      </li>
     </>
   );
   return (
-    <div>
-      <div className="navbar bg-base-100 shadow-sm">
+    <>
+      <div
+        className={`navbar md:px-10 ${pathname === "/" ? " " : "shadow-sm"}`}
+      >
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div
+              tabIndex={0}
+              role="button"
+              className={`btn btn-ghost rounded-xl lg:hidden ${
+                pathname === "/" ? "text-white" : "text-black"
+              }`}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -62,12 +97,17 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-white rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               {links}
             </ul>
           </div>
-          <Link className="text-base md:text-lg lg:text-xl font-bold" to={"/"}>
+          <Link
+            className={`text-base md:text-lg lg:text-xl font-bold ${
+              pathname === "/" ? "text-white" : "text-black"
+            }`}
+            to={"/"}
+          >
             Gadget Heaven
           </Link>
         </div>
@@ -83,7 +123,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

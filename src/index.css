@@ -11,3 +11,7 @@
 .nav-icon {
   @apply border border-gray-300 bg-white rounded-full p-2;
 }
+
+.max-w {
+  @apply max-w-[1280px] mx-auto;
+}
