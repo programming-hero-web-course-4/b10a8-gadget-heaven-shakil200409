@@ -10,7 +10,7 @@ const Home = () => {
   }, []);
   return (
     <>
-      <section className="px-4 relative flex justify-center">
+      <section className="px-4 relative flex justify-center bg-base-200">
         <div className="bg-purple-500 rounded-xl my-3 max-w overflow-hidden ">
           {/* Navbar */}
           <Navbar></Navbar>
@@ -38,7 +38,7 @@ const Home = () => {
         </div>
       </section>
       {/* Dynamic section */}
-      <section className="min-h-[calc(100vh-65px)] max-w p-4">
+      <section className="bg-base-200 min-h-[calc(100vh-65px)] max-w p-4">
         <Outlet />
       </section>
 

@@ -68,14 +68,16 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`navbar md:px-10 ${pathname === "/" ? " " : "shadow-sm"}`}
+        className={`navbar pr-5 md:px-10 ${
+          pathname === "/" ? " " : "shadow-sm"
+        }`}
       >
         <div className="navbar-start">
           <div className="dropdown">
             <div
               tabIndex={0}
               role="button"
-              className={`btn btn-ghost rounded-xl lg:hidden ${
+              className={`btn btn-ghost bg-transparent rounded-lg mr-2 lg:hidden ${
                 pathname === "/" ? "text-white" : "text-black"
               }`}
             >
@@ -97,7 +99,11 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-white rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className={`menu menu-sm dropdown-content rounded-box z-1 w-52 p-2 shadow ${
+                pathname === "/"
+                  ? "text-white bg-purple-950"
+                  : "text-black bg-white"
+              }`}
             >
               {links}
             </ul>
