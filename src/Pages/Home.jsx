@@ -39,6 +39,7 @@ const Home = () => {
       </section>
       {/* Dynamic section */}
       <section className="bg-base-200 min-h-[calc(100vh-65px)] max-w p-4">
+        <h2>Explore Cutting-Edge Gadgets</h2>
         <Outlet />
       </section>
 

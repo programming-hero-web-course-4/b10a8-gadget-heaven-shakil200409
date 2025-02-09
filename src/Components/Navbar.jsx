@@ -67,11 +67,7 @@ const Navbar = () => {
   );
   return (
     <>
-      <div
-        className={`navbar pr-5 md:px-10 ${
-          pathname === "/" ? " " : "shadow-sm"
-        }`}
-      >
+      <div className={`navbar pr-5 md:px-10`}>
         <div className="navbar-start">
           <div className="dropdown">
             <div

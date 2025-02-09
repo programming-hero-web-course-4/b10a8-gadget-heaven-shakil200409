@@ -5,12 +5,12 @@ const Footer = () => {
     <section className="">
       <div className="max-w p-20">
         <div className="py-10 border-b border-gray-300">
-          <Heading
-            title={"Gadget Heaven"}
-            subTitle={
-              "Leading the way in cutting-edge technology and innovation."
-            }
-          />
+          <div className="text-center">
+            <h3 className={`text-3xl font-bold my-4`}>Gadget Heaven</h3>
+            <p className="text-gray-500">
+              Leading the way in cutting-edge technology and innovation.
+            </p>
+          </div>
         </div>
         <footer className="footer sm:footer-horizontal place-items-center p-10 text-center">
           <nav className="text-center">
