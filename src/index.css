@@ -11,7 +11,10 @@
 .nav-icon {
   @apply border border-gray-300 bg-white rounded-full p-2;
 }
-
 .max-w {
   @apply max-w-[1280px] mx-auto;
+}
+.banner-img {
+  background-image: url("/src/assets/banner.jpg");
+  background-repeat: no-repeat;
 }
