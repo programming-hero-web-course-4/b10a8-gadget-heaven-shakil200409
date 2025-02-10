@@ -10,10 +10,12 @@ const Home = () => {
   }, []);
   return (
     <>
-      <section className="px-4 relative flex justify-center bg-base-200">
+      <section className="px-4 relative flex flex-col items-center justify-center bg-base-200 ">
         <div className="bg-purple-500 rounded-xl my-3 max-w overflow-hidden ">
           {/* Navbar */}
           <Navbar></Navbar>
+
+          {/* Banner Content */}
           <div className="px-5 md:px-10 lg:px-20 text-center">
             <img
               className="rounded-lg md:hidden"
@@ -33,14 +35,19 @@ const Home = () => {
             </button>
           </div>
         </div>
+        {/* Banner Image */}
         <div className="absolute hidden md:inline bg-white/40 border-2 m-10 border-white rounded-xl md:rounded-3xl p-4 z-50 top-94 md:top-86 lg:top-102">
           <div className="banner-img md:h-[320px] md:w-[620px] lg:h-[505px] lg:w-[990px] mx-auto rounded-lg md:rounded-xl bg-center bg-cover"></div>
         </div>
-      </section>
-      {/* Dynamic section */}
-      <section className="bg-base-200 min-h-[calc(100vh-65px)] max-w p-4">
-        <h2>Explore Cutting-Edge Gadgets</h2>
-        <Outlet />
+        {/* Gadgets section */}
+        <div className="min-h-[calc(100vh-65px)] max-w p-4 relative md:top-68 lg:top-108">
+          <h2 className="text-lg md:text-2xl lg:text-4xl font-bold">
+            Explore Cutting-Edge Gadgets
+          </h2>
+
+          {/* Dynamic Section */}
+          <Outlet />
+        </div>
       </section>
 
       {/* Footer */}

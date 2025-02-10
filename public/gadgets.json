@@ -1,0 +1,162 @@
+[
+  {
+    "product_id": 101,
+    "product_title": "UltraBook Pro 14",
+    "product_image": "ultrabook_pro_14.jpg",
+    "category": "Laptops",
+    "price": 1200,
+    "description": "A powerful and lightweight laptop with a stunning display.",
+    "Specification": [
+      "14-inch Retina Display",
+      "Intel i7 Processor",
+      "16GB RAM",
+      "512GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 102,
+    "product_title": "Gaming Beast X15",
+    "product_image": "gaming_beast_x15.jpg",
+    "category": "Laptops",
+    "price": 1800,
+    "description": "A high-performance gaming laptop with a powerful GPU.",
+    "Specification": [
+      "15.6-inch 240Hz Display",
+      "Intel i9 Processor",
+      "32GB RAM",
+      "1TB SSD"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 103,
+    "product_title": "WorkMate 13",
+    "product_image": "workmate_13.jpg",
+    "category": "Laptops",
+    "price": 950,
+    "description": "A reliable business laptop with long battery life.",
+    "Specification": [
+      "13-inch FHD Display",
+      "Intel i5 Processor",
+      "8GB RAM",
+      "256GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 104,
+    "product_title": "StudentBook 15",
+    "product_image": "studentbook_15.jpg",
+    "category": "Laptops",
+    "price": 700,
+    "description": "An affordable laptop for students and light usage.",
+    "Specification": [
+      "15.6-inch HD Display",
+      "Intel i3 Processor",
+      "8GB RAM",
+      "128GB SSD"
+    ],
+    "availability": false,
+    "rating": 4.3
+  },
+  {
+    "product_id": 105,
+    "product_title": "Creator Studio 16",
+    "product_image": "creator_studio_16.jpg",
+    "category": "Laptops",
+    "price": 2000,
+    "description": "A laptop designed for content creators with top-notch specs.",
+    "Specification": [
+      "16-inch 4K Display",
+      "AMD Ryzen 9",
+      "64GB RAM",
+      "2TB SSD"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 106,
+    "product_title": "BudgetNotebook 14",
+    "product_image": "budgetnotebook_14.jpg",
+    "category": "Laptops",
+    "price": 550,
+    "description": "A basic laptop for everyday tasks at an affordable price.",
+    "Specification": [
+      "14-inch FHD Display",
+      "AMD Ryzen 5",
+      "8GB RAM",
+      "256GB SSD"
+    ],
+    "availability": false,
+    "rating": 4.0
+  },
+  {
+    "product_id": 201,
+    "product_title": "SmartPhone X",
+    "product_image": "smartphone_x.jpg",
+    "category": "Smartphones",
+    "price": 999,
+    "description": "A premium smartphone with cutting-edge technology.",
+    "Specification": [
+      "6.7-inch OLED Display",
+      "Snapdragon 8 Gen 2",
+      "12GB RAM",
+      "256GB Storage"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 202,
+    "product_title": "BudgetPhone Z5",
+    "product_image": "budgetphone_z5.jpg",
+    "category": "Smartphones",
+    "price": 399,
+    "description": "An affordable smartphone with great features.",
+    "Specification": [
+      "6.5-inch LCD Display",
+      "MediaTek Dimensity 700",
+      "6GB RAM",
+      "128GB Storage"
+    ],
+    "availability": false,
+    "rating": 4.2
+  },
+  {
+    "product_id": 301,
+    "product_title": "SmartWatch Pro 5",
+    "product_image": "smartwatch_pro_5.jpg",
+    "category": "Smartwatches",
+    "price": 350,
+    "description": "A feature-packed smartwatch for fitness and productivity.",
+    "Specification": [
+      "1.8-inch AMOLED Display",
+      "Heart Rate Monitor",
+      "GPS",
+      "5-day Battery"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 302,
+    "product_title": "SportWatch Lite",
+    "product_image": "sportwatch_lite.jpg",
+    "category": "Smartwatches",
+    "price": 150,
+    "description": "An entry-level smartwatch with essential features.",
+    "Specification": [
+      "1.6-inch LCD Display",
+      "Step Counter",
+      "Water Resistant",
+      "3-day Battery"
+    ],
+    "availability": false,
+    "rating": 4.1
+  }
+]
