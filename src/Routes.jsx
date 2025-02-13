@@ -5,12 +5,21 @@ import Blogs from "./Pages/Blogs";
 import Statistics from "./Pages/Statistics";
 import Dashboard from "./Pages/Dashboard";
 import ErrorPage from "./Pages/ErrorPage";
+import Gadgets from "./Components/Gadgets";
+import Categories from "./Components/Categories";
 
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
     errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <Gadgets />,
+        loader: () => fetch("/gadgets.json"),
+      },
+    ],
   },
   {
     path: "/",

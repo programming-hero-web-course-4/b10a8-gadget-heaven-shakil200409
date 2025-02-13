@@ -41,11 +41,6 @@ const Home = () => {
         </div>
         {/* Gadgets section */}
         <div className="min-h-[calc(100vh-65px)] max-w p-4 relative md:top-68 lg:top-108">
-          <h2 className="text-lg md:text-2xl lg:text-4xl font-bold">
-            Explore Cutting-Edge Gadgets
-          </h2>
-
-          {/* Dynamic Section */}
           <Outlet />
         </div>
       </section>
