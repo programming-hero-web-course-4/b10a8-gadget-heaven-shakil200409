@@ -99,7 +99,7 @@
     "product_id": 201,
     "product_title": "SmartPhone X",
     "product_image": "smartphone_x.jpg",
-    "category": "Smartphones",
+    "category": "Phones",
     "price": 999,
     "description": "A premium smartphone with cutting-edge technology.",
     "Specification": [
@@ -115,7 +115,7 @@
     "product_id": 202,
     "product_title": "BudgetPhone Z5",
     "product_image": "budgetphone_z5.jpg",
-    "category": "Smartphones",
+    "category": "Phones",
     "price": 399,
     "description": "An affordable smartphone with great features.",
     "Specification": [
@@ -131,7 +131,7 @@
     "product_id": 301,
     "product_title": "SmartWatch Pro 5",
     "product_image": "smartwatch_pro_5.jpg",
-    "category": "Smartwatches",
+    "category": "Smart Watches",
     "price": 350,
     "description": "A feature-packed smartwatch for fitness and productivity.",
     "Specification": [
@@ -147,7 +147,7 @@
     "product_id": 302,
     "product_title": "SportWatch Lite",
     "product_image": "sportwatch_lite.jpg",
-    "category": "Smartwatches",
+    "category": "Smart Watches",
     "price": 150,
     "description": "An entry-level smartwatch with essential features.",
     "Specification": [

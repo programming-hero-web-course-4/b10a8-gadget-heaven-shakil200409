@@ -1,6 +1,10 @@
 [
   {
     "id": 1,
+    "name": "allProducts"
+  },
+  {
+    "id": 1,
     "name": "Laptops",
     "description": "Portable computers for personal and professional use."
   },

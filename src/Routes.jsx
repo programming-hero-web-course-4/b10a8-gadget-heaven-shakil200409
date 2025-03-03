@@ -6,7 +6,7 @@ import Statistics from "./Pages/Statistics";
 import Dashboard from "./Pages/Dashboard";
 import ErrorPage from "./Pages/ErrorPage";
 import Gadgets from "./Components/Gadgets";
-import Categories from "./Components/Categories";
+// import Categories from "./Components/Categories";
 
 const routes = createBrowserRouter([
   {

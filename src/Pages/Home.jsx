@@ -40,7 +40,7 @@ const Home = () => {
           <div className="banner-img md:h-[320px] md:w-[620px] lg:h-[505px] lg:w-[990px] mx-auto rounded-lg md:rounded-xl bg-center bg-cover"></div>
         </div>
         {/* Gadgets section */}
-        <div className="min-h-[calc(100vh-65px)] max-w p-4 relative md:top-68 lg:top-108">
+        <div className="min-h-[calc(100vh-65px)] w-full max-w p-4 mt-[450px]">
           <Outlet />
         </div>
       </section>
