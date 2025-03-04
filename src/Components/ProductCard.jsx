@@ -1,20 +1,23 @@
 import React from "react";
 
 const ProductCard = ({ gadget }) => {
-  const { product_title, product_image } = gadget;
+  const { product_title, product_image, price } = gadget;
   return (
-    <div className="card bg-base-100 shadow-sm">
-      <figure className="h-[180px] bg-base-300 p-5">
-        <img src={product_image} alt="Shoes" />
+    <div className="card rounded-2xl bg-base-100 shadow-xs">
+      <figure className="px-5 pt-5">
+        <img
+          src={product_image}
+          alt={product_title}
+          className="rounded-xl bg-base-300 h-[180px] w-full"
+        />
       </figure>
-      <div className="card-body">
-        <h2 className="card-title">{product_title}</h2>
-        <p>
-          A card component has a figure, a body part, and inside body there are
-          title and actions parts
-        </p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+      <div className="px-5 py-5 font-semibold">
+        <h2 className="text-xl">{product_title}</h2>
+        <p className="text-sm text-gray-400 my-3">Price: ${price}</p>
+        <div className="">
+          <button className="border-[1.5px] border-purple-500 border-b-red-500 hover:border-transparent hover:text-white hover:bg-purple-500 rounded-full px-5 py-2.5 text-purple-500 ">
+            View Details
+          </button>
         </div>
       </div>
     </div>

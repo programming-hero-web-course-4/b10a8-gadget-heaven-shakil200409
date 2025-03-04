@@ -17,22 +17,22 @@ const Gadgets = () => {
       <h2 className="text-lg md:text-2xl lg:text-4xl font-bold mb-10 text-center">
         Explore Cutting-Edge Gadgets {categories.length}
       </h2>
-      <div className="flex">
-        <div className="flex flex-col gap-3 w-52 p-4 rounded-2xl bg-white">
+      <div className="flex gap-5">
+        <div className="flex flex-col gap-3 w-72 p-4 py-6 h-full rounded-2xl bg-white">
           {categories.map((category) => (
             <button
               onClick={() => setActive(category)}
-              className={`font-semibold bg-gray-200 w-full px-5 py-2.5 text-center rounded-full ${
+              className={`font-semibold bg-gray-200 w-full px-5 py-3 text-left rounded-full ${
                 active.slug === category.slug
                   ? "bg-purple-500 text-white"
-                  : "text-black"
+                  : "text-gray-500"
               }`}
             >
               {category.name}
             </button>
           ))}
         </div>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {filteredGadgets.map((gadget) => (
             <ProductCard key={gadget.product_id} gadget={gadget} />
           ))}
