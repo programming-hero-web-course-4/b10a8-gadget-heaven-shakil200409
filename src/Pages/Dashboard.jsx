@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import Heading from "../Components/Heading";
 
 const Dashboard = () => {
+  // For dynamic pathname on the title
+  useEffect(() => {
+    document.title = "Gadget Heaven | Dashboard";
+  }, []);
   return (
     <section className="bg-purple-500 py-10 flex flex-col items-center">
       <Heading

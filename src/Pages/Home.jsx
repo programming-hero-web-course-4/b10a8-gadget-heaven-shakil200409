@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import bannerImg from "../assets/banner.jpg";
 
 const Home = () => {
+  // For dynamic pathname on the title
   useEffect(() => {
     document.title = "Gadget Heaven | Gadget Heaven";
   }, []);
