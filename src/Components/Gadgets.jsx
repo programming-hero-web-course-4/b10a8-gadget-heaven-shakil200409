@@ -13,14 +13,15 @@ const Gadgets = () => {
           return gadget.category.toLowerCase() === active.name.toLowerCase();
         });
   return (
-    <section className="">
+    <section>
       <h2 className="text-lg md:text-2xl lg:text-4xl font-bold mb-10 text-center">
-        Explore Cutting-Edge Gadgets {categories.length}
+        Explore Cutting-Edge Gadgets
       </h2>
       <div className="flex gap-5">
         <div className="flex flex-col gap-3 w-72 p-4 py-6 h-full rounded-2xl bg-white">
           {categories.map((category) => (
             <button
+              key={category.id}
               onClick={() => setActive(category)}
               className={`font-semibold bg-gray-200 w-full px-5 py-3 text-left rounded-full ${
                 active.slug === category.slug

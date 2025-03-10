@@ -1,7 +1,20 @@
 import { useEffect } from "react";
 import Heading from "../Components/Heading";
+import { useLoaderData, useParams } from "react-router-dom";
 
 const Details = () => {
+  const { product_id } = useParams();
+  const id = parseInt(product_id);
+  const data = useLoaderData();
+  const product = data.find((product) => product.product_id === id);
+  const {
+    product_image,
+    product_title,
+    price,
+    description,
+    rating,
+    availability,
+  } = product;
   // For dynamic pathname on the title
   useEffect(() => {
     document.title = "Gadget Heaven | Product Details";
